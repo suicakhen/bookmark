@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Shoping Cart- Checkout</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <div class="header-container">
+        <a href="index.html">
+          <img
+            class="logo"
+            alt="The Bookmark logo"
+            src="img/BookMark-logo.png"
+          />
+        </a>
+
+        <div class="form">
+          <form class="search-wrapper search-sub" action="">
+            <input
+              type="text"
+              placeholder="Search books..."
+              name="subscription"
+              class="email-sub"
+            />
+            <button type="submit" class="btn--form">Search</button>
+          </form>
+        </div>
+        <nav class="topnav">
+          <a class="main-nav-link" href="sign-in.html">LOG IN</a>
+          <a class="main-nav-link" href="about.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="wish-list"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              /></svg
+          ></a>
+          <a class="main-nav-link current-page" href="cart.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="shoping-cart"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              /></svg
+          ></a>
+        </nav>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="books.html">BOOKS</a></li>
+            <li><a class="main-nav-link" href="ebooks.html">EBOOKS</a></li>
+            <li>
+              <a class="main-nav-link" href="magazines.html">MAGAZINES</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="audiobooks.html">AUDIOBOOKS</a>
+            </li>
+            <li><a class="main-nav-link" href="dvds.html">DVDs</a></li>
+            <li><a class="sales" href="#">SALE</a></li>
+            <li><a class="main-nav-link" href="contact.html">CONTACT</a></li>
+           
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <p class="container subheading">Welcome Customer!This is your shopping Cart </p>
+      <!--List of items in the cart -->
+      <section class="my-shoping-cart container margin-bottom-sm">
+        <h2 class="heading-secondary cart-title">Shoping Cart</h2>
+        <table class="cart">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th class="book-description">Descriptons</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Sub-Total</th>
+            </tr>
+
+          <tbody>
+            <tr>
+              <td><a href=""><img src="img/best-selling-books/Abandoned-In-Death-by-J.D.Robb.jpg" alt="Abandoned-In-Death-by-J.D.Robb" class="cart-img"></a></td>
+              <td ><p >Lorem ipsum dolor sit amet consectetur.</p><p >J.D.Robb</p></td>
+              <td>$25</td>
+              <td>1</td>
+              <td>$25</td>
+              <td><a href="#">Delete</a></td>
+            </tr>
+
+            
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Sub-total</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Total</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <!-- <td></td> -->
+              <td><p>Please <a href="sign-in.html">log in </a>  checkout</p></td>
+              <td >
+                
+                <div class="buy-button btn--cart">
+                <a href="sign-in.html" 
+                  ><span class="btn btn--full"
+                    >CHECKOUT
+                    </span>
+                </a>
+              </div></td>
+            </tr>
+          </tfoot>
+          </thead>
+        </table>
+        <p class="subheading">Please ensure ALL the items you are purchasing are in your Shopping Cart above and are correct.</p> 
+      </section>
+      
+      <section class="payment-methods container  margin-bottom-ld">
+       
+        <div>
+          <p class="heading-tertiary">
+            We accept:
+          </p>
+         
+          <div class="cards">
+          <img src="img/payment-methods.png" alt="Accepting Payment Types" class="payment-card-img">
+         <div class="subheading"><p>Need help?</p><p>1300 768 978 </p> </div>
+         
+        </div>
+
+        </div>
+        
+      </section>
+
+      <!--Mail Subscrition  -->
+     <!--Promotion  -->
+     <section class="container margin-bottom-ld">
+      <h2 class="heading-secondary">Current Promotion</h2>
+      <div class="promotion">
+        <div class="free-shipping">
+          <a
+            ><img
+              class="sales-img"
+              src="img/free-delivery.jpg"
+              alt="sales books on the selve"
+            />
+          </a>
+
+          <p class="code">🏷️Code:FR2022</p>
+          <div>
+            <a href="#" class="btn btn--full btn--delivery"
+              >Shop Now &darr;</a
+            >
+          </div>
+        </div>
+        <p class="heading-tertiary">Hurry! Limited time ONLY</p>
+        <div class="sales">
+          <a
+            ><img
+              class="sales-img"
+              src="img/book-on-sales.jpg"
+              alt="sales books on the selve"
+          /></a>
+          <p class="code">🏷️ 20% Off Ebook Sales</p>
+
+          <a href="#" class="btn btn--full btn--sale">Shop Now &darr;</a>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img
+              class="logo"
+              alt="The Bookmark logo"
+              src="img/the-bookmark-logo-black@3x.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2022 by The Bookmark, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">22/309 Charles Street, West Perth WA 6066</p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@thebookmark.com"
+                >thebookmark@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About The Bookmark</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Brand partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Book Categories</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

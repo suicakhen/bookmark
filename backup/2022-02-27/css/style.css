@@ -1,0 +1,390 @@
+/**************************/
+/* HEADER */
+/**************************/
+/* 
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  background-color: #cce6e6;
+
+  /* Because we want header to be sticky later */
+/* height: 9.6rem;
+  padding: 0 4.8rem;
+} */
+.header {
+  background-color: #cce6e6;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+
+  justify-content: space-between;
+  align-items: center;
+
+  /* Because we want header to be sticky later */
+  height: 14rem;
+  padding-top: 2.4rem;
+  row-gap: 1.6rem;
+  column-gap: 4rem;
+}
+
+.logo {
+  height: 3.5rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.topnav {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+.main-nav {
+  grid-column: 1/-1;
+  grid-row: 2;
+  justify-content: center;
+  /* padding: 2.4rem 0; */
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+/**************************/
+/* NAVIGATION */
+/**************************/
+.shoping-cart,
+.wish-list {
+  stroke: #555;
+  width: 3rem;
+  height: auto;
+  margin-left: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+}
+.main-nav-list,
+.topnav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  text-align: right;
+  justify-content: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.sales:link,
+.sales:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(209, 25, 25);
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #008080;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #008080;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #008080;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  background-color: #cce6e6;
+  padding-top: 3.2rem;
+  height: 90vh;
+}
+
+.hero {
+  /* max-width: 130rem; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+  margin-bottom: 3.2rem;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/**************************/
+/* Best Selling Books */
+/**************************/
+.best-selling-books-cover {
+  height: 20rem;
+  width: 15rem;
+}
+.best-seller {
+  background-color: #f8f8f8;
+  position: relative;
+}
+.best-selling-books {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.book-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.arrow--left {
+  left: 0;
+  transform: translate(-25%, -50%);
+}
+.arrow--right {
+  right: 0;
+  transform: translate(25%, 50%);
+}
+
+/**************************/
+/* Search Books*/
+/**************************/
+
+input,
+.one {
+  padding: 1.2rem;
+  border-radius: 3px;
+}
+.fa-search {
+  padding: 0 2.4rem;
+}
+
+/**************************/
+/* News Letter Signup */
+/**************************/
+.promotion {
+  display: flex;
+
+  min-height: 20rem;
+
+  position: relative;
+  gap: 1.6rem;
+  justify-content: space-between;
+}
+.news-letter {
+  background-color: #004040;
+  margin-left: 0;
+  grid-column: 1;
+  padding: 1.6rem;
+}
+
+.sign-up {
+  color: #e6f2f2;
+}
+.subtitle {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #e6f2f2;
+}
+
+/* Sales */
+.sales {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.8rem;
+  position: relative;
+}
+.cover {
+  color: #e6f2f2;
+  background-color: rgba(51, 51, 51, 0.736);
+  padding: 2.4rem auto;
+  position: absolute;
+  margin-left: 1.6rem;
+  top: 30%;
+}
+
+.sales-img {
+  width: 35rem;
+  height: 21rem;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  background-color: #e6f2f2;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+/**************************/
+/* Account Page */
+/**************************/
+.account {
+  background-color: #cce6e61e;
+  display: flex;
+}
+.sign-in,
+.sign-up {
+  flex: 1 1 auto;
+  padding: 2.4rem;
+}
+
+.or {
+  font-size: 3.2rem;
+  flex: 1 0 6.4rem;
+  transform: translate(-10%, 25%);
+}
+
+/**************************/
+/* Contact Us */
+/**************************/
+
+label,
+legend {
+  font-size: 1.6rem;
+  color: #555;
+  margin-right: 0.8rem;
+}
+
+.contact {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.contact-info {
+  /* padding-left: 2.4rem; */
+  background-color: #f7f7f7;
+  padding-top: 1.6rem;
+  flex: 1 0 auto; /* flex: grow shirnk basis */
+  padding: 2.4rem;
+}

@@ -1,0 +1,493 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .header-container {
+    max-width: 120rem;
+    padding: 2.4rem 0;
+    height: auto;
+  }
+
+  .hero {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+  }
+
+  /**************************/
+  /* BELOW 1200px (Landscape Tablets) */
+  /**************************/
+
+  @media (max-width: 75em) {
+    html {
+      /* 9px / 16px  */
+      font-size: 56.25%;
+    }
+
+    .grid {
+      column-gap: 4.8rem;
+      row-gap: 6.4rem;
+    }
+
+    .heading-secondary {
+      font-size: 3.6rem;
+    }
+
+    .heading-tertiary {
+      font-size: 2.4rem;
+    }
+
+    .header {
+      padding: 0 3.2rem;
+    }
+
+    .main-nav-list {
+      gap: 3.2rem;
+    }
+
+    .hero {
+      gap: 4.8rem;
+    }
+    .sales-img,
+    .code {
+      width: 45rem;
+      font-size: 1.6rem;
+    }
+    .btn--form--newsletter {
+      margin-top: 1.6rem;
+    }
+    .magazine {
+      display: grid;
+      gap: 3.2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mag-img-1,
+    .mag-img-6 {
+      display: none;
+    }
+
+    .ebook-list {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 3.2rem;
+      column-gap: 0.8rem;
+    }
+
+    .audiobook-list {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 3.2rem;
+      column-gap: 2.4rem;
+    }
+    .contact {
+      gap: 6.4rem;
+    }
+  }
+
+  /**************************/
+  /* BELOW 944px (Tablets) */
+  /**************************/
+
+  @media (max-width: 59em) {
+    html {
+      /* 8px / 16px = 0.5 = 50% */
+      font-size: 50%;
+    }
+    .container {
+      max-width: 88rem;
+    }
+    .heading-primary {
+      font-size: 3rem;
+      margin-bottom: 2.4rem;
+    }
+    .heading-secondary {
+      font-size: 2.4rem;
+    }
+
+    .heading-tertiary {
+      font-size: 2rem;
+    }
+    .header-container {
+      height: 9.6rem;
+      padding: 0;
+      padding-top: 1.6rem;
+    }
+
+    .hero {
+      gap: 3.2rem;
+
+      height: 40rem;
+    }
+
+    .hero-img-box {
+      flex: 0 0 40rem;
+    }
+    .best-selling-books {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .ebook-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    .ebook {
+      display: flex;
+      flex-direction: column;
+      border-radius: 3px;
+      align-items: center;
+    }
+
+    .magazine {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .dvd-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      row-gap: 3.2rem;
+      column-gap: 2.4rem;
+    }
+    .dvd {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .grid--footer {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .logo-col,
+    .address-col {
+      grid-column: span 3;
+    }
+
+    .nav-col {
+      grid-row: 1;
+      grid-column: span 2;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  /**************************/
+  /* BELOW 704px (Tablets) */
+  /**************************/
+  @media (max-width: 44em) {
+    .container {
+      padding: 0 2.4rem;
+    }
+    .grid {
+      row-gap: 4.8rem;
+    }
+    .margin-bottom-ld {
+      margin-bottom: 8rem !important;
+    }
+    .heading-secondary {
+      font-size: 2rem;
+    }
+    .heading-tertiary {
+      font-size: 1.6rem;
+    }
+    .topnav,
+    .search--header {
+      display: none;
+    }
+
+    .hero {
+      padding-top: 9rem;
+    }
+    .header-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      height: 8rem;
+    }
+
+    .header {
+      padding: 0 2.4rem;
+    }
+
+    .btn-mob-nav,
+    .mob-search {
+      display: block;
+    }
+
+    .main-nav {
+      background-color: #cce6e6;
+
+      position: absolute;
+      top: 8rem;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      font-size: 1.8rem;
+      transition: all 0.5s;
+      /* transform: translateX(100%);  */
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      color: #333;
+    }
+    .main-nav-list {
+      flex-direction: column;
+      gap: 2.4rem;
+      padding-top: 6.4rem;
+    }
+
+    .nav-open .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+      z-index: 9999;
+    }
+    .nav-open .icon-mob-nav[name="close-outline"] {
+      display: block;
+    }
+    .nav-open .icon-mob-nav[name="menu-outline"] {
+      display: none;
+    }
+
+    .section-hero {
+      background-image: url(/img/hero.png);
+      background-position: right;
+      background-size: contain;
+      padding-top: 6.4 rem;
+      height: 50vh;
+      margin: 0 auto;
+    }
+    .hero {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      align-items: center;
+      gap: 3.2rem;
+    }
+    .hero-button {
+      margin-left: 4.8rem;
+    }
+    .hero-text-box {
+      background-color: #e6f2f2bf;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logos {
+      gap: 2.4rem;
+      justify-content: space-beteen;
+      flex-wrap: wrap;
+    }
+    .logos img {
+      height: 2.4rem;
+    }
+    .btn,
+    .btn:link,
+    .btn:visited {
+      display: inline-block;
+
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding: 0.4rem 1.6rem;
+      border-radius: 3px;
+    }
+
+    .img--4,
+    .img--5 {
+      display: none;
+    }
+
+    .promotion {
+      padding: 0 2.4rem;
+    }
+
+    .sales-img {
+      width: 32rem;
+      height: 16rem;
+      cursor: pointer;
+    }
+
+    .code {
+      width: 32rem;
+    }
+    .shipping {
+      display: none;
+    }
+
+    .sub-img {
+      transform: translateX(-50%);
+    }
+    .sign-up {
+      transform: translateX(-50%);
+      padding-bottom: 3.2rem;
+    }
+
+    .ebook .arrow {
+      display: none;
+    }
+
+    .ebooks-section {
+      flex-direction: column;
+    }
+
+    .magazine-page {
+      flex-direction: column;
+    }
+
+    .audiobooks-section {
+      flex-direction: column;
+    }
+
+    .contact {
+      flex-direction: column;
+    }
+
+    .account {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+    .register {
+      width: 100%;
+    }
+    .checkout-details {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+
+  /* MOBILE NAVIGATION */
+
+  /**************************/
+  /* BELOW 544px (Phones) */
+  /**************************/
+
+  @media (max-width: 34em) {
+    .grid {
+      row-gap: 4.8rem;
+    }
+    .heading-primary {
+      font-size: 2.4rem;
+    }
+
+    .hero-text-box {
+      padding: 1.2rem 3.2rem;
+    }
+
+    .best-selling-books-cover {
+      height: 18rem;
+      width: 12rem;
+    }
+    .margin-bottom-ld {
+      margin-bottom: 6.4rem !important;
+    }
+    .sales-img {
+      width: 24rem;
+      height: 12rem;
+      cursor: pointer;
+    }
+    .code {
+      width: 24rem;
+    }
+
+    .sub-img {
+      transform: translateX(-100%);
+    }
+    .mail {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .grid--footer {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    .logo-col,
+    .address-col {
+      grid-column: span 4;
+    }
+
+    .nav-col {
+      grid-row: 1;
+      grid-column: span 3;
+      margin-bottom: 2.4rem;
+    }
+
+    .address-col {
+      grid-column: -5/-1;
+    }
+    .dvds-section {
+      gap: 3.2rem;
+      flex-direction: column;
+    }
+
+    .dvd-sidebar {
+      width: 100%;
+    }
+
+    .dvd-list {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3.2rem;
+      column-gap: 2.4rem;
+    }
+
+    .my-shoping-cart {
+      padding: 1.2rem;
+    }
+    td {
+      border-bottom: 1px solid #eeeeee;
+      padding: 1.2rem 0.4rem;
+      margin-top: 2.4rem;
+    }
+
+    .cards {
+      padding: 1.2rem 2.4rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .payment-card-img {
+      height: 8rem;
+      width: 45rem;
+    }
+
+    .my-cart-items {
+      width: 100%;
+    }
+
+    /* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+  }
+}

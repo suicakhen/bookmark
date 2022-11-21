@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <div class="header-container">
+        <a href="index.html">
+          <img
+            class="logo"
+            alt="The Bookmark logo"
+            src="img/BookMark-logo.png"
+          />
+        </a>
+
+        <div class="form">
+          <form class="search-wrapper search-sub" action="">
+            <input
+              type="text"
+              placeholder="Search books..."
+              name="subscription"
+              class="email-sub"
+            />
+            <button type="submit" class="btn--form">Search</button>
+          </form>
+        </div>
+        <nav class="topnav">
+          <a class="main-nav-link" href="sign-in.html">LOG IN</a>
+          <a class="main-nav-link" href="about.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="wish-list"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              /></svg
+          ></a>
+          <a class="main-nav-link" href="cart.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="shoping-cart"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              /></svg
+          ></a>
+        </nav>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="books.html">BOOKS</a></li>
+            <li><a class="main-nav-link" href="ebooks.html">EBOOKS</a></li>
+            <li>
+              <a class="main-nav-link" href="magazines.html">MAGAZINES</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="audiobooks.html">AUDIOBOOKS</a>
+            </li>
+            <li><a class="main-nav-link" href="dvds.html">DVDs</a></li>
+            <li><a class="sales" href="#">SALE</a></li>
+            <li><a class="main-nav-link" href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <h2 class="heading-secondary">CHECKOUT</h2>
+      </section>
+      <section class="checkout-details container">
+        <div class="delivery-address">
+          <div class="form--address">
+            <h2 class="heading-secondary">Billing Address</h2>
+            <p class="subheading">
+              Please enter your details and delivery address below.
+            </p>
+            <form action="" method="post">
+              <p class="term">All fields are required.</p>
+              <div class="one">
+                <label for="firstName" id="firstNameLabel">First Name</label
+                ><input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="e.g John"
+                />
+              </div>
+
+              <div class="one">
+                <label for="lastName" id="lastNameLabel">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="e.g Smith"
+                />
+              </div>
+              <div class="one">
+                <label for="email" id="emaillabel">Email Address: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="e.g johnsmith@gmail.com"
+                />
+              </div>
+              <div class="one">
+                <label for="phone" id="phonelabel">Phone Number: </label
+                ><input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="e.g 0422 345 678"
+                />
+              </div>
+              <br />
+              <p class="heading-tertiary">Address</p>
+
+              <div class="one">
+                <label for="street-number">Street No: </label>
+                <input
+                  type="text"
+                  name="street number"
+                  placeholder="e.g 12 example street"
+                />
+              </div>
+              <div class="one">
+                <label for="suburb">Suburb: </label>
+                <input type="text" name="suburb" placeholder="e.g Mirrabooka" />
+              </div>
+              <div class="one">
+                <label for="state">Choose your state:</label>
+                <select id="state" name="states">
+                  <option value="">Select a state</option>
+                  <option value="NSW">New South Wales</option>
+                  <option value="VIC">victoria</option>
+                  <option value="SA">South Australia</option>
+                  <option value="NT">Northern Territory</option>
+                  <option value="WA">Western Australia</option>
+                  <option value="QLD">Queenland</option>
+                  <option value="TAS">Tasmania</option>
+                  <option value="ACT">Australia Capital Territory</option>
+                </select>
+              </div>
+              <div class="one">
+                <label for="postcode">Postcode: </label>
+                <input type="text" name="postcode" placeholder="e.g 6066" />
+              </div>
+            </form>
+          </div>
+
+          <!--Delivery-->
+          <div class="delivery-options">
+            <h3 class="heading-tertiary">Delivery Options</h3>
+            <h3 class="subheading">Please select the delivery option.</h3>
+            <div class="std-delivery">
+              <form action="" method="get">
+                <input
+                  type="radio"
+                  name="exp-delivery"
+                  value="Standard Delivery"
+                />
+                <label for="standard">Standard Delivery: $10</label><br />
+                <input
+                  type="radio"
+                  name="std-delivery"
+                  value="Standard Delivery"
+                />
+                <label for="standard">Express Delivery:$15</label><br />
+              </form>
+            </div>
+            <div class="free-delivery"></div>
+          </div>
+
+          <!--Payment-->
+          <section class="payment">
+            <form action="/action_page.php">
+              <div class="payment-option">
+                <h3 class="heading-tertiary">Payment</h3>
+                <div>
+                  <h3 class="subheading">Accepted cards:</h3>
+                  <div class="icon-container">
+                    <img
+                      src="img/master-card.png"
+                      alt="mastercard"
+                      class="card-img"
+                    />
+                    <a href="www.paypal.com"
+                      ><img
+                        src="img/paypal-logo.png"
+                        alt="paypal"
+                        class="card-img"
+                    /></a>
+                  </div>
+                </div>
+                <div class="one">
+                  <label for="cname">Name on Card</label>
+                  <input
+                    type="text"
+                    id="cname"
+                    name="cardname"
+                    placeholder="John More Doe"
+                  />
+                </div>
+
+                <div class="one">
+                  <label for="ccnum">Credit card number</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    placeholder="1111-2222-3333-4444"
+                  />
+                </div>
+                <div class="one">
+                  <label for="expmonth">Exp Date</label>
+                  <input
+                    type="text"
+                    id="expmonth"
+                    name="expmonth"
+                    placeholder="01/2022"
+                  />
+                </div>
+
+                <div class="one">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352" />
+                </div>
+              </div>
+
+              <div class="one">
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr" />
+                  Shipping address same as billing
+                </label>
+              </div>
+              <div>
+                <input
+                  type="submit"
+                  value="Continue to checkout"
+                  class="btn-checkout"
+                />
+              </div>
+            </form>
+          </section>
+        </div>
+        <!--List of items in the cart -->
+        <div class="my-cart-items container">
+          <h2 class="heading-secondary">Shoping Cart</h2>
+          <table class="cart">
+            <thead>
+              <tr class="checkout-list-title">
+                <th>ITEMS</th>
+                <th class="checkout--items"><a href="#">Edit</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href=""
+                    ><img
+                      src="img/best-selling-books/Abandoned-In-Death-by-J.D.Robb.jpg"
+                      alt="Abandoned-In-Death-by-J.D.Robb"
+                      class="cart-img"
+                  /></a>
+                </td>
+
+                <td>
+                  <p>Lorem ipsum dolor sit</p>
+                  <p>J.D.Robb</p>
+                  <p>$25</p>
+                  <p>Qty:1</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="#"
+                    ><img
+                      src="img/Magazine/Belle Magazine.jpg"
+                      alt="Abandoned-In-Death-by-J.D.Robb"
+                      class="cart-img"
+                  /></a>
+                </td>
+                <td>
+                  <p>Lorem ipsum dolor sit</p>
+                  <p>J.D.Robb</p>
+                  <p>$9.50</p>
+                  <p>Qty:1</p>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Sub-total</td>
+                <td>$38</td>
+              </tr>
+              <tr>
+                <td>Shipping fee</td>
+                <td>$7.00</td>
+              </tr>
+              <tr>
+                <td>Total to pay</td>
+                <td>$45</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img
+              class="logo"
+              alt="The Bookmark logo"
+              src="img/the-bookmark-logo-black@3x.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2022 by The Bookmark, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">22/309 Charles Street, West Perth WA 6066</p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@thebookmark.com"
+                >thebookmark@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About The Bookmark</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Brand partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Book Categories</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

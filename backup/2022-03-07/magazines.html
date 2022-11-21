@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Magazines</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <div class="container header-container">
+        <a href="index.html">
+          <img
+            class="logo"
+            alt="The Bookmark logo"
+            src="img/the-bookmark-logo-black@3x.png"
+          />
+        </a>
+
+        <div class="search search--topNav">
+          <!-- <p class="hero-description">Starts reading books today!</p> -->
+          <form class="example" action="/action_page.php">
+            <input
+              type="text"
+              placeholder="Search Books.."
+              name="search"
+              class="email-sub"
+            />
+            <button type="submit" class="btn--form margin-right-sm">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <nav class="topnav">
+          <a class="main-nav-link" href="sign-in.html">LOG IN</a>
+          <a class="main-nav-link" href="about.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="wish-list"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              /></svg
+          ></a>
+          <a class="main-nav-link" href="cart.html"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="shoping-cart"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              /></svg
+          ></a>
+        </nav>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="books.html">BOOKS</a></li>
+            <li><a class="main-nav-link" href="ebooks.html">EBOOKS</a></li>
+            <li>
+              <a class="main-nav-link" href="magazines.html">MAGAZINES</a>
+            </li>
+            <li><a class="main-nav-link" href="audiobooks.html">AUDIOBOOKS</a></li>
+            <li><a class="main-nav-link" href="dvds.html">DVDs</a></li>
+            <li><a class="sales" href="#">SALE</a></li>
+            <li><a class="main-nav-link" href="contact.html">CONTACT</a></li>
+
+            <li>
+              <a href="#" class="btn btn--full">Shop Now &darr;</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="magazine-page container">
+      <!--Best Selling -->
+      <section class="margin-bottom-ld">
+        <h2 class="heading-secondary">Most Popular Books</h2>
+        <div class="magazine">
+          <div class="mag-img mag-img-1">
+            <img
+              src="img/Magazine/Intrepreneur Magazine.jpg"
+              alt="Bella Magazine"
+            />
+          </div>
+          <div class="mag-img mag-img-2">
+            <img src="img/Magazine/Better Homes and Gardens.jpg" alt="" />
+          </div>
+          <div class="mag-img mag-img-3">
+            <img
+              src="img/Magazine/Cooking - Women's Weekly.jpg"
+              alt="Cooking-Women Weekly Magazine"
+            />
+          </div>
+
+          <div class="mag-img mag-img-4">
+            <img
+              src="img/Magazine/Men's Health Magazine.jpg"
+              alt="Men's Health Magazine"
+            />
+          </div>
+          <div class="mag-img mag-img-5">
+            <img src="img/Magazine/Money Magazine.jpg" alt="Money Magazine" />
+          </div>
+          <div class="mag-img mag-img-6">
+            <img
+              src="img/Magazine/VOGUE AUSTRALIA.jpg"
+              alt="House and Garden Magazine"
+            />
+          </div>
+        </div>
+
+        <a href="#" class="link see-all-books">See all Magazines &rarr;</a>
+        <!-- <button class="arrow--left arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            fill="none"
+            viewbox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button class="arrow--right arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            fill="none"
+            viewbox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button> -->
+      </section>
+      <!--Side Bar-->
+      <aside>
+        <h2 class="heading-secondary">Find by Categories</h2>
+        <div class="mag-categories"><p class="subheading">Fashion</p></div>
+        <div class="mag-categories"><p class="subheading">Living</p></div>
+        <div class="mag-categories">
+          <p class="subheading">Home and Garden</p>
+        </div>
+        <div class="mag-categories"><p class="subheading">Money</p></div>
+        <div class="mag-categories"><p class="subheading">Men Magazine</p></div>
+        <div class="mag-categories">
+          <p class="subheading">Women's Magazine</p>
+        </div>
+      </aside>
+    </main>
+    <!--News Letter  -->
+    <section class="container margin-bottom-ld">
+      <div class="news-letter">
+        <h2 class="sign-up heading-secondary">
+          Sign Up for exclusive email offer!
+        </h2>
+        <p class="subtitle white-text">Instore or Online</p>
+        <div class="newsletter-subscription">
+          <form class="example" action="/action_page.php">
+            <input
+              type="text"
+              placeholder="Email Address"
+              name="search"
+              class="email-sub"
+            />
+            <button type="submit" class="btn--form margin-right-sm">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo">
+            <img
+              class="logo"
+              alt="The Bookmark logo"
+              src="img/the-bookmark-logo-black@3x.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2022 by The Bookmark, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">22/309 Charles Street, West Perth WA 6066</p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@thebookmark.com"
+                >thebookmark@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About The Bookmark</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Brand partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Book Categories</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
